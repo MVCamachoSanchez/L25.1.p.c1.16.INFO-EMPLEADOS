@@ -11,14 +11,15 @@ export default class Cl_vEmpresa{
         this.lblCantidadAdministrativos = document.getElementById("mainForm_lblCantidadAdministrativos");
         this.lblPromedioAdministrativos = document.getElementById("mainForm_lblPromedioAdministrativos");
         this.vPersonal = new Cl_vPersonal();
-        this.vPersonal.btprocesar.onclick = () => this.controlador.procesarPersonal();
+        this.vPersonal.btProcesar.onclick = () =>
+            this.controlador.procesarPersonal();
     }
 
     procesarPersonal(){
         this.mPersonal = new Cl_mPersonal({
-            nombre : this.mPersonal.nombre,
-            tipo: this.mPersonal.tipo,
-            suelso: this.mPersonal.sueldo,
+            nombre : this.vPersonal.nombre,
+            tipo: this.vPersonal.tipo,
+            sueldo: this.vPersonal.sueldo,
         })
         return this.mPersonal;
     }

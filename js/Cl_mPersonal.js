@@ -5,17 +5,17 @@ export default class Cl_mPersonal{
         this.sueldo = sueldo;
     }
 
-    set tipo(tipo) {
-        this._tipo = +tipo;
-        if (tipo !== 1 && tipo !== 2) this._tipo = 1;
-      }
+    set nombre(nombre){
+        this._nombre = nombre;
+    }
     get nombre(){
         return this._nombre;
     }
 
-    set tipo(tipo){
-        this._tipo = tipo;
-    }
+    set tipo(tipo) {
+        this._tipo = +tipo;
+        if (tipo !== 1 && tipo !== 2) this._tipo = 1;
+      }
     get tipo(){
         return this._tipo;
     }

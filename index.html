@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id="personalForm">
+        <h3>Datos del Empleado</h3>
+        <input type="text" id="personalForm_inNombre" placeholder="Nombre"></input>
+        <input type="text" id="personalForm_inTipo" placeholder="Tipo"></input>
+        <input type="text" id="personalForm_inSueldo" placeholder="Sueldo"></input>
+        <button id="personalForm_btProcesar">Procesar</button>
+    </section>
+    <section id="mainForm">
+        <h3>Info de Empleados</h3>
+        <p>Monto total pagado a Obreros:
+            $<span id="mainForm_lblMontoTotalObreros">?</span>
+        </p>
+        <p>Promedio pagado a 
+            $<span id="mainForm_lblCantidadObreros">?</span>
+            obreros: $<span id="mainForm_lblPromedioObreros">?</span>
+        </p>
+        <p>Monto total pagado a Administrativos:
+            $<span id="mainForm_lblMontoTotalAdministrativos">?</span>
+        </p>
+        <p>Promedio pagado a
+            $<span id="mainForm_lblCantidadAdministrativos">?</span>
+            administrativos: $<span id="mainForm_lblPromedioAdministrativos">?</span>
+        </p>
+    </section>
+</body>
+<script type="module">
+    import Cl_principal from "./js/principal.js";
+    new Cl_principal()
+</script>
+</html>
